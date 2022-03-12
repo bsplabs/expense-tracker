@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
-  console.log('ExpenseForm...');
+  console.log("ExpenseForm...");
 
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
@@ -48,7 +48,7 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
 
@@ -92,7 +92,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button type="button" onClick={props.onCancel}>ยกเลิก</button>
+        <button type="button" onClick={props.onCancel}>
+          ยกเลิก
+        </button>
         <button type="submit">เพิ่มรายการใช้จ่าย</button>
       </div>
     </form>

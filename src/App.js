@@ -5,12 +5,12 @@ import "./App.css";
 import { useState } from "react";
 
 const DUMMY_EXPENSES = [
-  { id: "e1", title: "ค่าไฟ", amount: 392.58, date: new Date(2022, 3, 6) },
+  { id: "e1", title: "ค่าไฟ", amount: 392.58, date: new Date(2022, 4, 6) },
   {
     id: "e2",
     title: "ค่างวดรถ Honda City RS",
     amount: 13122,
-    date: new Date(2022, 3, 6),
+    date: new Date(2022, 2, 6),
   },
   {
     id: "e3",
@@ -22,7 +22,7 @@ const DUMMY_EXPENSES = [
     id: "e4",
     title: "ค่าบัตรเครดิตร",
     amount: 3200,
-    date: new Date(2022, 3, 6),
+    date: new Date(2022, 1, 6),
   },
 ];
 
